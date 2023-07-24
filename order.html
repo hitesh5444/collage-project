@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starducks</title>
     <link rel="stylesheet" href="./assets/css/order.css" />
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <nav class="navigation">
-      <h1>Star<span class="duc">ducks</span></h1>
+      <div class="logo-area">
+        <img src="./assets/image/starducks.png" alt="" class="logo">
+        <h1>Star<span class="duc">ducks</span></h1>
+      </div>
+      <div class="dropdown-menu">
+        <select name="" class="dropdown">
+          <option value="">All</option>
+          <option value="">Drink's</option>
+          <option value="">Snake's</option>
+          <option value="">Cake's</option>
+        </select>
+      </div>
       <div class="online">
         <div class="light"></div>
       </div>
@@ -18,16 +31,9 @@
     <div class="main">
       <div class="card-area">
         <div class="cd-area">
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
+          <div class="cards">
+
+          </div>
           <div class="cards"></div>
           <div class="cards"></div>
           <div class="cards"></div>
@@ -36,7 +42,36 @@
         </div>
       </div>
       <div class="cart-area">
-        <h1>this is a cart area</h1>
+        <h1>order cart</h1>
+
+        <div class="list-area">
+          <div class="order-list">
+            <h4 class="order-price">₹ 20</h4>
+            <h4 class="order-name">kit-kat</h4>
+            <button class="cen"><i class="fa fa-close"></i></button>
+          </div>
+          <div class="order-list">
+            <h4 class="order-price">₹ 20</h4>
+            <h4 class="order-name">kit-kat</h4>
+            <button class="cen"><i class="fa fa-close"></i></button>
+          </div>
+          <div class="order-list">
+            <h4 class="order-price">₹ 20</h4>
+            <h4 class="order-name">kit-kat</h4>
+            <button class="cen"><i class="fa fa-close"></i></button>
+          </div>
+        </div>
+
+        <div class="finel-area">
+          <select name="" class="price">
+            <option value="">₹ 60</option>
+            <option value="">18% GST</option>
+            <option value="">10% off</option>
+            <option value="">------</option>
+          </select>
+
+          <button class="sub">submit</button>
+        </div>
       </div>
     </div>
   </body>

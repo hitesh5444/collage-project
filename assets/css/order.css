@@ -22,12 +22,34 @@
   padding: 10px 10px;
 }
 
-.navigation h1 .duc {
-  color: red;
+.navigation .logo-area h1 .duc {
+  color: green;
+}
+
+.navigation .logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .2rem;
+}
+
+.navigation .logo-area .logo {
+  height: 50px;
+  width: 50px;
+}
+
+.dropdown {
+  padding: 5px 40px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.76);
+  outline: none;
+  cursor: pointer;
+  margin-left: 70rem;
 }
 
 .light {
-  background: red;
+  background: green;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -39,26 +61,34 @@
   justify-content: space-between;
   width: 100%;
   height: 92vh;
-  background: url(../image/photo-1622126807280-9b5b32b28e77.jpeg) no-repeat;
+  background: url(../image/banner-item-01.jpg) no-repeat;
   background-size: cover;
 }
 
 .main .card-area {
   width: 100%;
   height: 92vh;
-  /* background: lightgray; */
 }
 
 .main .cart-area {
-  width: 30%;
+  padding: 10px 10px;
+  width: 28%;
   height: 92vh;
   background: rgba(128, 128, 128, 0.822);
+}
+
+.main .cart-area h1 {
+  padding: 10px 20px;
+  border-left: 4px solid orangered;
+  color: whitesmoke;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .main .card-area .cd-area {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
   height: 92vh;
   padding: 20px 20px;
@@ -66,8 +96,88 @@
 }
 
 .cards {
-  background: whitesmoke;
-  height: 200px;
-  width: 200px;
+  background: url(../image/banner-item-01.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 150px;
   border-radius: 10px;
+  cursor: pointer;
+  animation: all 0.5s ease-in-out;
+}
+
+.cards:nth-child(2) {
+  background: url(../image/banner-item-02.jpg);
+  background-size: cover;
+}
+
+.cards:nth-child(3) {
+  background: url(../image/flutter.jpg);
+  background-size: cover;
+}
+
+.cards:nth-child(4) {
+  background: url(../image/office.jpg);
+  background-size: cover;
+}
+
+.cards:nth-child(5) {
+  background: url(../image/off-emp.jpg);
+  background-size: cover;
+}
+
+.cards:nth-child(6) {
+  background: url(../image/network.jpg);
+  background-size: cover;
+}
+
+.list-area {
+  width: 100%;
+  height: 70vh;
+  overflow-y: scroll;
+  padding: 25px 10px;
+}
+
+.list-area .order-list {
+  background: lightgray;
+  width: 100%;
+  height: 5vh;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.list-area .order-list .cen {
+  padding: 3px 3px;
+  background: lightgray;
+  border: 0.5px solid lightgray;
+  cursor: pointer;
+}
+
+.finel-area {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.price {
+  padding: 10px 30px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+.sub {
+  padding: 10px 30px;
+  background: green;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
