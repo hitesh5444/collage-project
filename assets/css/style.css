@@ -1,5 +1,67 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-area .image-area .background-image {
+  height: 100vh;
+  width: 100%;
+}
+
+.login-area .form-area {
+  width: 80%;
+  height: 100vh;
+  background: lightgray;
+}
+
+.login-area .form-area .login-box {
+  width: 60%;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.723);
+  position: absolute;
+  margin-top: 5%;
+  margin-left: -14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+
+.login-area .form-area .login-box h1 {
+    padding: 10px 30px;
+    border-left: 5px solid red;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.login-area .form-area .login-box .name-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+}
+
+.name {
+    width: 100%;
+}
+
+.email {
+    width: 100%;
+}
+
+.login-area .form-area .login-box input {
+    width: 90%;
+    height: 5vh;
+    padding: 10px 10px;
 }
