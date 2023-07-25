@@ -23,6 +23,9 @@
           <option value="">Cake's</option>
         </select>
       </div>
+      <div class="count-box">
+        <i class="fa fa-shopping-cart"></i>&nbsp;<span class="count">0</span>
+      </div>
       <div class="online">
         <div class="light"></div>
       </div>
@@ -31,40 +34,34 @@
     <div class="main">
       <div class="card-area">
         <div class="cd-area">
-          <div class="cards">
-
+          <div class="cards" id="item1">
+            <img src="./assets/image/banner-item-01.jpg" class="product-img" alt="Denim Jeans" style="width:100%">
+            <div class="dit">
+              <h3>office no 1</h3>
+            <p class="price">₹ 5000/-</p>
+            </div>
+            <p><button class="add-cart" onclick="addtocart(item1)">Add to Cart</button></p>
           </div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
-          <div class="cards"></div>
+          <div class="cards" id="item2">
+            <img src="./assets/image/banner-item-02.jpg" class="product-img" alt="Denim Jeans" style="width:100%">
+            <div class="dit">
+              <h3>office no 2</h3>
+            <p class="price">₹ 5000/-</p>
+            </div>
+            <p><button class="add-cart" onclick="addtocart(item2)">Add to Cart</button></p>
+          </div>
         </div>
       </div>
       <div class="cart-area">
         <h1>order cart</h1>
 
-        <div class="list-area">
-          <div class="order-list">
-            <h4 class="order-price">₹ 20</h4>
-            <h4 class="order-name">kit-kat</h4>
-            <button class="cen"><i class="fa fa-close"></i></button>
-          </div>
-          <div class="order-list">
-            <h4 class="order-price">₹ 20</h4>
-            <h4 class="order-name">kit-kat</h4>
-            <button class="cen"><i class="fa fa-close"></i></button>
-          </div>
-          <div class="order-list">
-            <h4 class="order-price">₹ 20</h4>
-            <h4 class="order-name">kit-kat</h4>
-            <button class="cen"><i class="fa fa-close"></i></button>
-          </div>
+        <div class="list-area" id="product-title">
+          
         </div>
 
         <div class="finel-area">
           <select name="" class="price">
-            <option value="">₹ 60</option>
+            <option value="">₹ 00</option>
             <option value="">18% GST</option>
             <option value="">10% off</option>
             <option value="">------</option>
@@ -74,5 +71,7 @@
         </div>
       </div>
     </div>
+
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
