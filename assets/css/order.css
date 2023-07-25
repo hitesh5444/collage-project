@@ -13,13 +13,17 @@
 }
 
 .navigation {
-  background: #bab4b4;
+  background: #040f0f;
   width: 100%;
   height: 8vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 10px;
+  padding: 10px 20px;
+}
+
+.navigation .logo-area h1 {
+  color: white;
 }
 
 .navigation .logo-area h1 .duc {
@@ -48,11 +52,35 @@
   margin-left: 65rem;
 }
 
-.light {
-  background: green;
-  height: 25px;
-  width: 25px;
+.online-indicator {
+  width: 20px;
+  height: 20px;
+  background: #0fcc45;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.blink {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #0fcc45;
+  opacity: 0.7;
+  border-radius: 50%;
+  animation: blink 1s linear infinite;
+}
+
+/*Animations*/
+
+@keyframes blink {
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+}
+
+.ofline {
+  background: red;
 }
 
 .main {
@@ -61,8 +89,9 @@
   justify-content: space-between;
   width: 100%;
   height: 92vh;
-  background: url(../image/banner-item-01.jpg) no-repeat;
-  background-size: cover;
+  /* background: url(../image/background.jpg) no-repeat;
+  background-size: cover; */
+  background: #ebebe9;
 }
 
 .main .card-area {
@@ -110,26 +139,24 @@
 .main .card-area .cd-area {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
   width: 100%;
   height: 92vh;
   padding: 20px 20px;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .cards {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.326);
-  background: white;
-  max-width: 300px;
-  max-height: 250px;
+  max-width: 150px;
+  max-height: 150px;
   font-family: arial;
   border-radius: 10px;
 }
 
 .product-img {
   height: 20vh;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .price {
@@ -158,6 +185,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 5px 5px;
+  display: none;
 }
 
 .add-cart {
@@ -206,7 +234,7 @@
 }
 
 .price {
-  padding: 10px 30px;
+  padding: 5px 30px;
   cursor: pointer;
   outline: none;
   border-radius: 5px;
@@ -220,4 +248,10 @@
   outline: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.off {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
 }

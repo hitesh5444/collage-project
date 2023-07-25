@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starducks</title>
     <link rel="stylesheet" href="./assets/css/order.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
     <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
@@ -26,8 +27,8 @@
       <div class="count-box">
         <i class="fa fa-shopping-cart"></i>&nbsp;<span class="count">0</span>
       </div>
-      <div class="online">
-        <div class="light"></div>
+      <<div class="online-indicator" id="light" onclick="ofline()">
+        <span class="blink" id="lightblink"></span>
       </div>
     </nav>
 
@@ -35,20 +36,39 @@
       <div class="card-area">
         <div class="cd-area">
           <div class="cards" id="item1">
-            <img src="./assets/image/banner-item-01.jpg" class="product-img" alt="Denim Jeans" style="width:100%">
+            <img src="./assets/image/banner-item-01.jpg" onclick="addtocart(item1)" class="product-img" alt="Denim Jeans" style="width:100%">
             <div class="dit">
               <h3>office no 1</h3>
             <p class="price">₹ 5000/-</p>
             </div>
-            <p><button class="add-cart" onclick="addtocart(item1)">Add to Cart</button></p>
           </div>
           <div class="cards" id="item2">
-            <img src="./assets/image/banner-item-02.jpg" class="product-img" alt="Denim Jeans" style="width:100%">
+            <img src="./assets/image/banner-item-02.jpg" onclick="addtocart(item2)" class="product-img" alt="Denim Jeans" style="width:100%">
             <div class="dit">
               <h3>office no 2</h3>
             <p class="price">₹ 5000/-</p>
             </div>
-            <p><button class="add-cart" onclick="addtocart(item2)">Add to Cart</button></p>
+          </div>
+          <div class="cards" id="item3">
+            <img src="./assets/image/flutter.jpg" onclick="addtocart(item3)" class="product-img" alt="Denim Jeans" style="width:100%">
+            <div class="dit">
+              <h3>office no 3</h3>
+            <p class="price">₹ 5000/-</p>
+            </div>
+          </div>
+          <div class="cards" id="item4">
+            <img src="./assets/image/fyp.jpg" onclick="addtocart(item4)" class="product-img" alt="Denim Jeans" style="width:100%">
+            <div class="dit">
+              <h3>office no 4</h3>
+            <p class="price">₹ 5000/-</p>
+            </div>
+          </div>
+          <div class="cards" id="item5">
+            <img src="./assets/image/off-emp.jpg" onclick="addtocart(item5)" class="product-img" alt="Denim Jeans" style="width:100%">
+            <div class="dit">
+              <h3>office no 5</h3>
+            <p class="price">₹ 5000/-</p>
+            </div>
           </div>
         </div>
       </div>
@@ -73,5 +93,6 @@
     </div>
 
     <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/ofline.js"></script>
   </body>
 </html>
