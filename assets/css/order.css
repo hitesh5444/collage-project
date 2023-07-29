@@ -107,7 +107,7 @@
 }
 
 .main .cart-area h1 {
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-left: 4px solid orangered;
   color: whitesmoke;
   margin-left: 5px;
@@ -201,7 +201,7 @@
 
 .list-area {
   width: 100%;
-  height: 70vh;
+  height: 72vh;
   overflow-y: scroll;
   padding: 25px 10px;
 }
@@ -229,15 +229,21 @@
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0.5rem;
   padding: 10px 20px;
 }
 
 .price {
-  padding: 5px 30px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 30px;
   cursor: pointer;
   outline: none;
   border-radius: 5px;
+  background: green;
+  color: white;
+  font-weight: 600;
 }
 
 .sub {
